@@ -1,0 +1,119 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the app */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2f4fdc, #b86464);
+    padding: 20px;
+}
+
+/* Notes App Box */
+.notes-app {
+    width: 100%;
+    max-width: 400px;
+    height: 650px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Title */
+.notes-app h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #c2bebe;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.notes-app h2 img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Notes Container */
+.notes-container {
+    max-height: 500px;
+    overflow-y: auto;
+    /* padding-right: 10px;  Need to be edited */
+}
+
+/* Individual Note */
+.note {
+    display: flex;
+    position: relative;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 80px;
+    max-height: 110px;
+    overflow-y: auto;
+}
+
+/* Editable Text Area */
+.input-box {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    word-wrap: break-word;
+}
+
+/* Delete Icon */
+.delete-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Add Note Button */
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #2f4fdc;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #4c6ef5;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background: #1e40af;
+}
